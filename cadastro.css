@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-grey: rgba(82, 83, 85, 0.6);
+    --purple-white: #A465A6;
+}
+
+body {
+    background: url("src/img/darya-jum-xCaxqIjZivI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%; 
+}
+
+.esquerda img {
+    width: 600px; 
+    height: 700px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: 0.3s all ease-in-out;
+}
+.esquerda img:hover {
+    transform: scale(1.03);
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 50%;
+    height: 100%;
+
+    background-color: var(--white-grey);
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 40px 4%;
+    gap: 5px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 32px;
+}
+
+.barra {
+    width: 30%;
+    height: 1px;
+    background: #000;
+}
+
+.topo button {
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--purple-white);
+    border: none;
+    padding: 10px;
+    color: white;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.topo h1 {
+    color: black;
+}
+
+.topo button:hover {
+    background-color: #cccc;
+    border: solid 1px white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.meio {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+    gap: 20px;
+}
+
+.inputs label {
+    margin-top: 5px;
+    font-size: 32px;
+}
+
+.inputs input {
+    font-size: 32px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #cccc;
+}
+
+.genero {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.genero label {
+    margin-right: 20px;
+}
+
+.genero label {
+    margin-right: 20px;
+}
+
+#btn-continuar {
+    border-radius: 10px;
+    font-weight: bold;
+    background: #A465A6;
+    border: none;
+    padding: 10px;
+    color: white;
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+#btn-continuar:hover {
+    background-color: #cccc;
+    border: solid 1px white;
+    color: black;
+    transform: scale(1.1);
+}

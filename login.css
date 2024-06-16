@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Monsterrat", sans-serif;
+}
+
+:root {
+    --white-grey: rgba(82, 83, 85, 0.6);
+    --purple-white: #A465A6;
+}
+
+body {
+    background: url("src/img/darya-jum-xCaxqIjZivI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 40px 4%;
+    gap: 5px;
+}
+
+.esquerda {
+    background-color: var(--white-grey);
+    border-radius: 50%;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    height: 100%; 
+}
+
+.direita {
+    border-radius: 5px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+}
+
+.topo h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 75px;
+    color: whitesmoke;
+}
+
+.meio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.meio h2 {
+    color: whitesmoke;
+}
+
+.meio h3 {
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.meio h3:hover {
+    transform: scale(1.1);
+    color: whitesmoke;
+}
+
+.meio a {
+    color: black;
+}
+
+.inputs input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #cccc;
+    width: 400px;
+}
+.inputs input:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.inputs ::placeholder {
+    color: black;
+}
+
+#btn-cadastro {
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--purple-white);
+    border: none;
+    padding: 10px;
+    color: white;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+#btn-cadastro:hover {
+    background-color: #cccc;
+    border: solid 1px white;
+    color: black;
+    transform: scale(1.1);
+}
+
+#btn-entrar {
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--purple-white);
+    border: none;
+    padding: 10px;
+    color: white;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+#btn-entrar:hover {
+    background-color: #cccc;
+    border: solid 1px white;
+    color: black;
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+ul li {
+    list-style: none;
+    border-radius: 24px;
+    border: solid 2px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+li i {
+    margin-top: 5px;
+    padding: 2px;
+    width: 35px; 
+    height: 35px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: scale(1.1);
+    color: whitesmoke;
+}

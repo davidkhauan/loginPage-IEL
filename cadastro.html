@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="cadastro.css">
+        <title>Register Page</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="esquerda">
+                <img src="src/img/christoph-nolte-M_E6OJOuwiY-unsplash.jpg" alt="">
+            </div>
+
+            <div class="direita">
+                <div class="topo">
+                    <h1>Cadastre-se</h1>
+                    <div class="barra"></div>
+                    <a href="login.html">
+                        <button id="btn-entrar">Entrar</button>
+                    </a>
+                </div>
+
+                <div class="meio">
+                    <form>
+                        <div id="inputs-direita" class="inputs">
+                            <label>Primeiro Nome:</label>
+                            <input type="text" />
+                            <label>E-mail:</label>
+                            <input type="e-mail" />
+                            <label>Senha:</label>
+                            <input type="password" />
+                        </div>
+
+                        <div id="inputs-esquerda" class="inputs">
+                            <label>Sobrenome:</label>
+                            <input type="text" />
+                            <label>Celular:</label>
+                            <input type="number" />
+                            <label>Confirme sua senha:</label>
+                            <input type="password" />
+                        </div>
+
+                        <div class="genero">
+                            <input type="radio" id="fem" name="genero" value="fem" />
+                            <label for="html">Feminino</label>
+                            <input type="radio" id="masc" name="genero" value="masc" />
+                            <label for="html">Masculino</label>
+                            <input type="radio" id="outros" name="genero" value="outros" />
+                            <label for="html">Outros</label>
+                            <input type="radio" id="none" name="genero" value="none" />
+                            <label for="html">Prefiro não dizer</label>
+                        </div>
+                    </form>
+
+                    <button id="btn-continuar">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
